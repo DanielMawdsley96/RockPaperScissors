@@ -93,7 +93,7 @@ def rock_paper_scissors():
                 print(display_stats())
                 print('This is game number: ' + str(game))
                 if game == 100:
-                    print('\n Thank you for playing! You can stop now /n')                                     
+                    print('\n Thank you for playing! You can stop now \n')                                     
             elif player_selection == 'HELP':
                 print(rules())
             elif player_selection == 'EXIT':
