@@ -1,5 +1,5 @@
 # RockPaperScissors
-Collection of pyhton scripts which play the game of rock, paper scissors. In verisons in the beta the computer ai is designed to beat the opponent using information from a study on rock paper scissors. 
+Collection of pyhton scripts which play the game of rock, paper scissors. In verisons in the beta the computer ai is designed to beat the opponent using information from a study on rock paper scissors and in the later version is able to recognise patterns in order to predict player moves. 
 
 Introduction:
 
