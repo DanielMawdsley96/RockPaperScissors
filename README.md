@@ -13,4 +13,14 @@ Draws - 115
 
 For more information on the testing feel free to reading the testing section.
 
+Background
+
+Here I shall explain the thoery of rock paper scsissors as well as refrence a paper.
+
+Testing 
+
+Here I shall explain how I tested whether my algorthem was significantly better than a random choice algorithem. 
+
+
+
 
