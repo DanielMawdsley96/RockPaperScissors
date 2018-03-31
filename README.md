@@ -44,7 +44,7 @@ Draws - 115
 
 So the computer won more games but was it signifacntly better than just random? 
 
-Time for the techinical bit. So to answer this a one tailed statistical test at the 10% signifcance level was performed with the null hypothesis being that the computer is no better than random. The probability of this result was 0.2% if the games were random and as such can reject the null hypothesis is rejected and I can say that my computer is better than purely random. 
+Time for the techinical bit. So to answer this a one tailed statistical test at the 10% signifcance level was performed with the null hypothesis being that the computer is no better than random. The probability of this result was 0.2% if the games were random and as such can reject the null hypothesis  and I can say that my computer is better than a purely random a;gorethim. 
 
 Conclusion
 
