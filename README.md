@@ -16,7 +16,7 @@ For more information on the testing feel free to reading the testing section.
 
 Background
 
-In order to develop a computer algorithim to beat players I needed to find the optimal stratergies for playing. After some reseacrh I found three patterns of players which could be exploited these were:
+In order to develop a computer algorithim to beat players I needed to find the optimal stratergies for playing. After some research I found three patterns of players which could be exploited these were:
 1. Player more likely to choose rock on first choice (50% of the time).
 2. If the player wins then player more likely to stay the same (50% of the time).
 3. If the player loses then they are more likely to change (60% of the time).
