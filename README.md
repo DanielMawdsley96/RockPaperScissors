@@ -27,7 +27,7 @@ Testing
 
 So after successfully implementing the three basic stratergies I tested the program which worked well intially, however I encountered several issues:
 1. The computer was deterministic and hence predictable by a player with enough experience.
-2. Several simple stratergies existed to beat the computer including (Repeating the same choice endlessly or cycling through (rock, scissors, papers)
+2. Several simple stratergies existed to beat the computer including (Repeating the same choice endlessly or cycling through (rock, scissors, papers))
 
 So to counter these things I made some modifications:
 1. Implemented a 30% chance of computer choosing random.
