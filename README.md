@@ -53,8 +53,8 @@ Overall the project was a success as I was able to create a computer algorithim 
 
 Possible improvements could include:
 1. Integrating this using the pygame module into a web application.
-2. Using all of the history to pick up more player patterns such as tendieces for rock etc...
-3. Saving users player history to create a database of move mistory to help predict player tendencies.
+2. Using all of the history of the players moves to pick up more player patterns such as tendieces for rock etc...
+3. Saving users player history to create a database of move history to help predict player tendencies.
 
 
 
