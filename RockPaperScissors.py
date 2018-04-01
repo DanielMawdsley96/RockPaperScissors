@@ -141,6 +141,7 @@ def play_game():
     global player_selection
     global game
     global result
+
     while finished is False:
         #Continues playing untill a win condition or exit
         computer_selection = computer_move()
