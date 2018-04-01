@@ -2,7 +2,7 @@
 
 This program runs a game of rock paper scissors for the first to 5 wins.
 The computer decides a move based on rock paper scissors stratergies
-along with pattern recognition algorithms to predict what the player will choose"""
+along with pattern recognition algorithms to predict what the player will choose."""
 
 import random as r
 
