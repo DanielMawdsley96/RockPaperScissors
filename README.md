@@ -17,9 +17,9 @@ For more information on the testing feel free to read the testing section.
 Background
 
 In order to develop a computer algorithm to beat players, I needed to find the optimal strategies for playing. After some research I found three patterns of players which could be exploited these were:
-1. The player is more likely to choose rock on first choice (50% of the time).
-2. If the player wins then player more likely to stay the same (50% of the time).
-3. If the player loses then they are more likely to change (60% of the time).
+1. The player is more likely to choose rock in the first game.
+2. If the player wins then the player is more likely to make the same choice in the next game.
+3. If the player loses then the player is more likely to change in the next game.
 
 These will be used to predict and counter the player's future moves.
 
