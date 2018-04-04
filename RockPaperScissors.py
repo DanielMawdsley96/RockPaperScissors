@@ -1,6 +1,6 @@
 """Rock Paper Scissors game designed by Daniel Mawdsley
 
-This program runs a game of rock paper scissors for the first to 10 wins.
+This program runs a game of rock paper scissors for the first to 5 wins.
 The computer decides a move based on rock paper scissors stratergies
 along with pattern recognition algorithms to predict what the player will choose."""
 
@@ -22,9 +22,9 @@ game = 0
 history = [] #Stores player's move in history
 
 def game_end():
-    """Ends the game when either the computer or player has 10 wins."""
+    """Ends the game when either the computer or player has 5 wins."""
 
-    end = 10 #No of wins required to end game
+    end = 5 #No of wins required to end game
     if stats['WINS'] == end:
         print('\nYou won! You must of cheated!') #Player has won
     elif stats['LOSSES'] == end:
@@ -49,7 +49,7 @@ def explain_rules():
              '\n       *Rock blunts Scissors'
              '\n       *Scissors cuts Paper'
              '\n       *Paper wraps Rock\n'
-             '\nThe first to 10 wins is the winner!'
+             '\nThe first to 5 wins is the winner!'
              '\nIf you wish to exit or need help type exit or help\n')
     return rules
 
