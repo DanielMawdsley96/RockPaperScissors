@@ -10,13 +10,13 @@ win_list = [('ROCK', 'SCISSORS'),  # Rock beats Scissors
             ('SCISSORS', 'PAPER'),  # Scissors beats paper
             ('PAPER', 'ROCK')]  # Paper beats rock
 
-counter_play = {'ROCK': 'PAPER', #List of counter plays
+counter_play = {'ROCK': 'PAPER', 
                 'PAPER':'SCISSORS',
                 'SCISSORS':'ROCK'}
 
-selection_list = ['ROCK', 'SCISSORS', 'PAPER'] #List of posibble choices
+selection_list = ['ROCK', 'SCISSORS', 'PAPER'] 
 abbreviations = {'R':'ROCK', 'S':'SCISSORS', 'P':'PAPER'}
-stats = {'WINS':0, 'LOSSES':0, 'TIES':0} #Tracks wins, losses and ties
+stats = {'WINS':0, 'LOSSES':0, 'TIES':0} 
 outcome = ['WIN', 'DRAW', 'LOSS']
 game = 0
 history = [] #Stores player's move in history
@@ -24,11 +24,11 @@ history = [] #Stores player's move in history
 def game_end():
     """Ends the game when either the computer or player has 5 wins."""
 
-    end = 5 #No of wins required to end game
+    end = 5 
     if stats['WINS'] == end:
-        print('\nYou won! You must of cheated!') #Player has won
+        print('\nYou won! You must of cheated!') 
     elif stats['LOSSES'] == end:
-        print('\nPuny human I have defeated you! ' #Player has lost
+        print('\nPuny human I have defeated you! ' 
               '\nPlay me again if you dare!')
     return stats['WINS'] == end or stats['LOSSES'] == end
 
@@ -74,13 +74,13 @@ def introduction():
 
 def computer_move():
     """Decides how the computer will choose a move based on 7 tests in a hierarchy."""
-    random_game = 10*r.random()
+    
     #1.
     if game == 0:
         #Rock is most likely people's first choice
         move = 'PAPER'
     #2.
-    elif random_game < 4:
+    elif 10*r.random() < 4:
         #30% chance of randomness to deter counterstratergies
         move = r.choice(selection_list)
     #3.
@@ -92,7 +92,7 @@ def computer_move():
             recent = range(1, 7)
             recent_history = []
             repetition = 0
-            repetition_length = 3 #length of the repeating pattern
+            repetition_length = 3 
             for games in recent:
                 #Stores last 6 moves in recent history
                 recent_history.append(history[-games])
@@ -131,7 +131,7 @@ def computer_move():
                 move = r.choice(selection_list)
     #7.
     else:
-        #If player choice invalid then next valid is random
+        #If player choice invalid then move is random
         move = r.choice(selection_list)
     return move
 
@@ -145,7 +145,7 @@ def play_game():
     while finished is False:
         #Continues playing untill a win condition or exit
         computer_selection = computer_move()
-        #Computer decides first
+        #Computer decides first to prevent co computer cheating
         player_selection = input("Type R for rock, P for paper and S for scissors: \n\n")
         player_selection = player_selection.upper()
 
@@ -189,16 +189,14 @@ def play_game():
             finished = game_end()
 
             if finished is True:
-                #Ask user for rematch
                 rematch = input('Would you like a rematch? ')
                 rematch = rematch.upper()
                 if rematch == 'YES':
                     finished = False
-                    #resests stats after reset
                     stats['WINS'] = stats['LOSSES'] = stats['TIES'] = 0
 
             if game == 100:
-                print('\n I am getting bored of beating you now! \n')
+                print('\nI am getting bored of beating you now! \n')
 
         elif player_selection == 'HELP':
             print(explain_rules())
@@ -210,3 +208,4 @@ def play_game():
         else:
             print('Invalid input if you need help or wish to leave type help or exit')
 introduction()
+
